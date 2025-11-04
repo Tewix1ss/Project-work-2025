@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ЛПР - формирование приказа (История приказов)</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="sidebar">
+    <img src="logo.svg" alt="Московский Политех" class="logo-img">
+    <div class="title">Проверка остаточных знаний</div>
+    <div class="user">
+      <div class="user-img"></div>
+      <div class="user-name">Иванов Иван Иванович</div>
+    </div>
+    <div class="menu">
+      <div class="menu-item"><div class="icon"></div>Главная</div>
+      <div class="menu-item">Приказы</div>
+      <div class="menu-item">Списки рекомендуемых групп</div>
+      <div class="menu-item">Отчеты</div>
+      <div class="menu-item">Настройки доступа</div>
+    </div>
+  </div>
+  <div class="main-form">
+    <div class="form-card">
+      <div class="form-header-row">
+        <div class="form-title">Приказы</div>
+        <div class="form-subtitle">Формирование приказа</div>
+      </div>
+      <form>
+        <div class="form-grid">
+          <!-- Дата приказа / Номер -->
+          <div class="form-cell">
+            <div class="label">Дата приказа</div>
+            <input type="text" class="input short" placeholder="ДД.ММ.ГГ">
+          </div>
+          <div class="form-cell">
+            <div class="label">Номер</div>
+            <input type="text" class="input short" placeholder="">
+          </div>
+
+          <!-- Учебный год / Семестр -->
+          <div class="form-cell">
+            <div class="label">Учебный год</div>
+            <select class="select short"><option>Не выбрано</option></select>
+          </div>
+          <div class="form-cell">
+            <div class="label">Проверяемый семестр</div>
+            <select class="select short"><option>Не выбрано</option></select>
+          </div>
+        </div>
+
+        <div class="section-title fullwidth">Должностные лица</div>
+        <div class="form-grid">
+          <div class="form-cell">
+            <div class="label">Начальник отдела контроля образовательного процесса</div>
+            <input type="text" class="input short" placeholder="ФИО">
+          </div>
+          <div class="form-cell">
+            <div class="label">Начальник центра по учебно-методической работе</div>
+            <input type="text" class="input short" placeholder="ФИО">
+          </div>
+        </div>
+
+        <div class="section-title fullwidth">Сроки проведения</div>
+        <div class="form-grid">
+          <div class="form-cell">
+            <div class="label">Сводный отчет по результатам:<br>Проверки до</div>
+            <input type="text" class="input short" placeholder="ДД.ММ.ГГ">
+            <div class="label mt">Сдача отчетов:<br>Сдача бумажных отчетов до</div>
+            <input type="text" class="input short" placeholder="ДД.ММ.ГГ">
+          </div>
+          <div class="form-cell">
+            <div class="label">Сводный отчет по результатам:<br>Анкетирования до</div>
+            <input type="text" class="input short" placeholder="ДД.ММ.ГГ">
+            <div class="label mt">Сдача отчетов:<br>Сдача электронных отчетов до</div>
+            <input type="text" class="input short" placeholder="ДД.ММ.ГГ">
+          </div>
+        </div>
+
+        <div class="button-row">
+          <button class="btn print" type="button">Выпустить в печать</button>
+          <button class="btn create" type="submit">Сформировать приказ</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
